@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAREBEE - Fitness Made Easy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <span>DAREBEE</span>
+            </div>
+            
+            <nav>
+                <a href="#workouts">WORKOUTS</a>
+                <a href="#plans">PLANS</a>
+                <a href="#programs">PROGRAMS</a>
+                <a href="#challenges">CHALLENGES</a>
+                <a href="#guides">GUIDES</a>
+                <a href="#collections">COLLECTIONS</a>
+                <a href="#community">COMMUNITY</a>
+            </nav>
+            
+            <div class="header-buttons">
+                <button class="btn btn-bookmarks">MY BOOKMARKS</button>
+                <button class="btn btn-donate">DONATE</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Daily Tracker -->
+        <div class="daily-tracker">
+            <div class="tracker-header">
+                <div class="current-date" id="currentDate">Monday, January 13, 2026</div>
+                <div class="day-counter">DAY <span id="dayNumber">1</span></div>
+            </div>
+
+            <div class="tracker-grid">
+                <!-- Today's Workout -->
+                <div class="tracker-section">
+                    <h3>💪 Today's Workout</h3>
+                    <ul class="workout-list" id="workoutList">
+                        <li><strong>Push-ups</strong> – 3 × 15</li>
+                        <li><strong>Bench Press / Dumbbell Press</strong> – 3 × 10</li>
+                        <li><strong>Incline Dumbbell Press</strong> – 3 × 10</li>
+                        <li><strong>Chest Fly</strong> (machine/dumbbell) – 3 × 12</li>
+                        <li><strong>Triceps Dips</strong> – 3 × 10</li>
+                        <li><strong>Triceps Pushdown</strong> – 3 × 12</li>
+                        <li><strong>Finish:</strong> 10 min brisk walking / cycling</li>
+                    </ul>
+                </div>
+
+                <!-- Today's Meal Plan -->
+                <div class="tracker-section">
+                    <div class="section-header">
+                        <h3 id="mealPlanHeader">🍽️ Today's Meal Plan</h3>
+                        <button id="btnViewNext" class="btn btn-sm" aria-pressed="false">View Next Day</button>
+                    </div>
+                    <ul class="meal-plan" id="mealPlan">
+                        <li>
+                            <div class="meal-time">EARLY MORNING</div>
+                            <div class="meal-items">Warm water + 5 soaked almonds</div>
+                        </li>
+                        <li>
+                            <div class="meal-time">BREAKFAST</div>
+                            <div class="meal-items">2 idli + sambar<br>2 boiled eggs</div>
+                        </li>
+                        <li>
+                            <div class="meal-time">MID-MORNING</div>
+                            <div class="meal-items">Papaya bowl</div>
+                        </li>
+                        <li>
+                            <div class="meal-time">LUNCH</div>
+                            <div class="meal-items">1 cup rice<br>Sardine fish curry<br>Cabbage thoran + curd</div>
+                        </li>
+                        <li>
+                            <div class="meal-time">EVENING SNACK</div>
+                            <div class="meal-items">Roasted peanuts (1 handful)</div>
+                        </li>
+                        <li>
+                            <div class="meal-time">DINNER</div>
+                            <div class="meal-items">2 chapati<br>Chicken curry</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- General Rules -->
+            <div class="general-rules" style="margin-top: 1.5rem;">
+                <h4>📋 Daily Guidelines</h4>
+                <ul>
+                    <li>Oil: 1–2 tsp/day max</li>
+                    <li>Rice: 1 cup per meal</li>
+                    <li>Protein daily: 80–90 g</li>
+                    <li>Water: 3+ litres/day</li>
+                    <li>Dinner before 8:30 PM</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="grid">
+            <!-- Exercise of the Day -->
+            <div class="card">
+                <div class="card-content exercise-card">
+                    <div class="exercise-illustration">
+                        <svg width="380" height="180" viewBox="0 0 380 180">
+                            <!-- Ground shadow -->
+                            <ellipse cx="190" cy="165" rx="140" ry="12" fill="#e8e8e8"/>
+                            
+                            <!-- Person doing sit-up punches -->
+                            <!-- Head -->
+                            <ellipse cx="100" cy="85" rx="22" ry="26" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                            <circle cx="95" cy="83" r="3" fill="#2d2d2d"/>
+                            <path d="M 92 92 Q 100 94 108 92" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                            
+                            <!-- Hair -->
+                            <path d="M 78 75 Q 80 65 90 62 Q 100 60 110 62 Q 120 65 122 75" fill="#2d2d2d"/>
+                            
+                            <!-- Torso -->
+                            <path d="M 105 108 L 130 125 L 128 155 L 100 155 L 72 155 L 70 125 L 95 108 Z" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                            
+                            <!-- Abs lines -->
+                            <line x1="100" y1="120" x2="100" y2="150" stroke="#d0d0d0" stroke-width="1.5"/>
+                            <line x1="88" y1="128" x2="112" y2="128" stroke="#d0d0d0" stroke-width="1"/>
+                            <line x1="88" y1="138" x2="112" y2="138" stroke="#d0d0d0" stroke-width="1"/>
+                            
+                            <!-- Left arm (bent, punching) -->
+                            <path d="M 70 120 L 40 105 L 25 110" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="25" cy="110" r="8" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                            
+                            <!-- Right arm (extended back) -->
+                            <path d="M 130 120 L 155 115 L 170 108" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <circle cx="170" cy="108" r="8" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                            
+                            <!-- Legs (bent at knee) -->
+                            <path d="M 85 155 L 90 165 L 120 150 L 135 165" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            <path d="M 115 155 L 120 165 L 155 148 L 175 162" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                            
+                            <!-- Shoes -->
+                            <ellipse cx="138" cy="166" rx="16" ry="8" fill="#2d2d2d"/>
+                            <ellipse cx="178" cy="163" rx="16" ry="8" fill="#2d2d2d"/>
+                        </svg>
+                    </div>
+                    
+                    <h2 class="exercise-title">Exercise of the Day</h2>
+                    <div class="exercise-number">20</div>
+                    <p class="exercise-name">sit-up punches</p>
+                </div>
+            </div>
+
+            <!-- Workout of the Day -->
+            <div class="card">
+                <div class="card-content workout-card">
+                    <h1 class="workout-title">GET</h1>
+                    <h1 class="workout-title">BACK</h1>
+                    <h1 class="workout-title">UP</h1>
+                    <p class="workout-subtitle">Workout</p>
+                    <p class="workout-subtitle">of the Day</p>
+                </div>
+            </div>
+
+            <!-- January Challenge -->
+            <div class="card full-width">
+                <div class="card-content challenge-card">
+                    <div class="challenge-content">
+                        <div class="challenge-text">
+                            <h2 class="challenge-label">January Challenge</h2>
+                            <h1 class="challenge-title">ARCADE</h1>
+                        </div>
+                        <div class="challenge-figure">
+                            <svg width="220" height="320" viewBox="0 0 220 320">
+                                <!-- Standing figure -->
+                                <!-- Head -->
+                                <ellipse cx="110" cy="45" rx="24" ry="28" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                                <circle cx="105" cy="42" r="3" fill="#2d2d2d"/>
+                                <circle cx="115" cy="42" r="3" fill="#2d2d2d"/>
+                                <path d="M 102 52 Q 110 55 118 52" stroke="#2d2d2d" stroke-width="1.5" fill="none"/>
+                                
+                                <!-- Hair -->
+                                <path d="M 86 35 Q 88 22 98 18 Q 110 16 122 18 Q 132 22 134 35" fill="#2d2d2d"/>
+                                
+                                <!-- Neck -->
+                                <rect x="102" y="70" width="16" height="12" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                                
+                                <!-- Torso -->
+                                <path d="M 102 82 L 85 90 L 82 160 L 98 168 L 122 168 L 138 160 L 135 90 L 118 82 Z" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                                
+                                <!-- Muscle definition -->
+                                <line x1="110" y1="90" x2="110" y2="165" stroke="#d0d0d0" stroke-width="1.5"/>
+                                <path d="M 95 100 Q 110 105 125 100" stroke="#d0d0d0" stroke-width="1" fill="none"/>
+                                <path d="M 95 115 Q 110 120 125 115" stroke="#d0d0d0" stroke-width="1" fill="none"/>
+                                <path d="M 95 130 Q 110 135 125 130" stroke="#d0d0d0" stroke-width="1" fill="none"/>
+                                <circle cx="95" cy="95" r="8" fill="none" stroke="#d0d0d0" stroke-width="1"/>
+                                <circle cx="125" cy="95" r="8" fill="none" stroke="#d0d0d0" stroke-width="1"/>
+                                
+                                <!-- Arms -->
+                                <path d="M 85 95 L 70 105 L 68 150 L 75 155" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <path d="M 135 95 L 150 105 L 152 150 L 145 155" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <circle cx="72" cy="153" r="9" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                                <circle cx="148" cy="153" r="9" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                                
+                                <!-- Waist/Belt -->
+                                <rect x="85" y="168" width="50" height="8" fill="white" stroke="#2d2d2d" stroke-width="2.5"/>
+                                
+                                <!-- Legs -->
+                                <path d="M 98 176 L 96 240 L 92 285" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                <path d="M 122 176 L 124 240 L 128 285" stroke="#2d2d2d" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+                                
+                                <!-- Shoes -->
+                                <ellipse cx="90" cy="288" rx="18" ry="9" fill="#2d2d2d"/>
+                                <ellipse cx="130" cy="288" rx="18" ry="9" fill="#2d2d2d"/>
+                                <path d="M 75 288 L 90 286" stroke="#2d2d2d" stroke-width="2.5"/>
+                                <path d="M 145 288 L 130 286" stroke="#2d2d2d" stroke-width="2.5"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
